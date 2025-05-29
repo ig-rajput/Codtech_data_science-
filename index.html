@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer Prediction</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background-color: #f2f2f2; }
+        .container { background: white; padding: 20px; border-radius: 8px; max-width: 600px; margin: auto; }
+        input[type=number] { width: 100%; padding: 10px; margin: 6px 0; }
+        input[type=submit] { background-color: #4CAF50; color: white; padding: 10px; width: 100%; border: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Breast Cancer Prediction</h2>
+        <form action="/predict" method="post">
+            {% for i in range(30) %}
+            <input type="number" name="feature{{i}}" placeholder="Feature {{i + 1}}" step="any" required>
+            {% endfor %}
+            <input type="submit" value="Predict">
+        </form>
+        <h3>{{ prediction_text }}</h3>
+    </div>
+</body>
+</html>
