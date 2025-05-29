@@ -1,20 +1,20 @@
-# Breast Cancer Prediction App
+# CODTECH Internship Tasks
 
-This is a simple web app that predicts whether a breast cancer tumor is malignant or benign using a logistic regression model.
+## Task 1: ETL Pipeline
+- Loads CSV data
+- Applies preprocessing with pandas and scikit-learn
+- Outputs train/test splits
 
-## Project Structure
+## Task 2: Deep Learning Image Classifier
+- Trains a CNN on CIFAR-10 using TensorFlow
+- Saves accuracy plot
 
-- `app.py`: Flask web application
-- `model.pkl`: Trained ML model
-- `cancer_data.csv`: Dataset used for training
-- `templates/index.html`: User input form for predictions
-- `requirements.txt`: Required Python packages
-
-## How to Run
-
-```bash
-pip install -r requirements.txt
-python app.py
+## Structure
 ```
-
-Then open `http://127.0.0.1:5000/` in your browser.
+codtech_internship/
+├── task_1_etl_pipeline.py
+├── task_2_image_classification.py
+├── README.md
+└── sample_data/
+    ├── data.csv
+```
